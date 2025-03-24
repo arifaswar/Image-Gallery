@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Image Gallery with AI</h2>
+        <div class="input-container">
+            <input type="text" id="prompt" placeholder="Search for images...">
+            <button onclick="generateAIImage()">Generate Image</button>
+        </div>
+        <div class="gallery" id="gallery"></div>
+        <div class="modal" id="modal"> 
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImg" src="" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
